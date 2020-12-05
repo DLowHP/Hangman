@@ -13,7 +13,8 @@ SOURCES += \
     Hangman.cpp
 
 HEADERS += \
-    Hangman.h
+    Hangman.h \
+    include/nlohmann/json.hpp
 
 FORMS += \
     Hangman.ui
