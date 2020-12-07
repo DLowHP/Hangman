@@ -436,3 +436,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 CppProperties.json
+hangman.css

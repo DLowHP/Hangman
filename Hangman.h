@@ -6,6 +6,10 @@
 #include "include/nlohmann/json.hpp"
 using json = nlohmann::json;
 
+#include "scenes/Canvas/Canvas.h"
+#include "scenes/Menu/Menu.h"
+#include "scenes/Game/Game.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Hangman; }
 QT_END_NAMESPACE
@@ -18,19 +22,16 @@ public:
     Hangman(QWidget *parent = nullptr);
     ~Hangman();
 
-private slots:
-    void on_btnLoad_clicked();
-
-    void on_btnPrint_clicked();
-
 private:
     Ui::Hangman *ui;
 
-    std::string filename;
-    json jsonFile;
-    
-    void loadJson();
-    void printJsonArray();
+    Menu* menu;
+    Game* game;
+
+private slots:
+    void showMenu();
+    void startGame();
+
 
 };
 #endif // HANGMAN_H
