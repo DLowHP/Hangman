@@ -9,6 +9,7 @@ using json = nlohmann::json;
 #include "scenes/Canvas/Canvas.h"
 #include "scenes/Menu/Menu.h"
 #include "scenes/Game/Game.h"
+#include "scenes/Scores/Scores.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Hangman; }
@@ -27,11 +28,12 @@ private:
 
     Menu* menu;
     Game* game;
+    Scores* scores;
 
 private slots:
     void showMenu();
+    void showScores();
     void startGame();
-
-
+    void saveScore();
 };
 #endif // HANGMAN_H

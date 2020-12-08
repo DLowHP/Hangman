@@ -8,6 +8,8 @@
 #include "include/nlohmann/json.hpp"
 using json = nlohmann::json;
 
+#include "scenes/Help/Help.h"
+
 Menu::Menu(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Menu)
@@ -23,6 +25,9 @@ Menu::Menu(QWidget *parent) :
     connect(ui->btnHard, SIGNAL(clicked()), this, SLOT(changeDifficulty()));
 
     connect(ui->btnPlay, SIGNAL(clicked()), this, SLOT(startGame()));
+
+    connect(ui->btnHelp, SIGNAL(clicked()), this, SLOT(showHelp()));
+    connect(ui->btnScores, SIGNAL(clicked()), this, SLOT(showScores()));
 }
 
 Menu::~Menu() { delete ui; }
@@ -106,4 +111,15 @@ void Menu::changeDifficulty()
 void Menu::startGame()
 {
     emit startGameSignal();
+}
+
+void Menu::showHelp()
+{
+    Help h;
+    h.exec();
+}
+
+void Menu::showScores()
+{
+    emit showScoresSignal();
 }

@@ -383,7 +383,7 @@ QPushButton:!enabled {
 }</string>
        </property>
        <property name="text">
-        <string>Help (WIP)</string>
+        <string>Help</string>
        </property>
       </widget>
      </item>
@@ -424,7 +424,7 @@ QPushButton:!enabled {
 }</string>
        </property>
        <property name="text">
-        <string>Scores (WIP)</string>
+        <string>Scores</string>
        </property>
       </widget>
      </item>

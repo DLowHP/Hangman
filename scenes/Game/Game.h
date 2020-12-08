@@ -20,7 +20,7 @@ public:
 
     void setMenuRef(Menu* ptr);
     void setupGame();
-    int& getScore();
+    QVector<QString> getScore();
 
 private:
     Ui::Game *ui;
@@ -43,6 +43,8 @@ private:
     int points;
     int balloonsSaved;
 
+    QVector<QString> score;
+
     void toggleLatinExtendedBtns(bool disable = true);
     void encodePhrase();
     void decodePhrase();
@@ -54,8 +56,10 @@ private slots:
     void checkLetter();
     void printArray();
     void menuBtn();
+    void saveResetGame();
 
 signals:
+    void saveScore();
     void returnToMenu();
     void redraw();
 };

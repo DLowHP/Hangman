@@ -76,10 +76,15 @@ void Game::setupGame()
 #endif
 }
 
-int& Game::getScore()
+QVector<QString> Game::getScore()
 {
-    int* score = &points;
-    return *score;
+    QString name = qgetenv("USER");
+    if (name.isEmpty())
+        name = qgetenv("USERNAME");
+    score.insert(0, name);
+    score.insert(1, QString::number(balloonsSaved));
+    score.insert(2, QString::number(points));
+    return score;
 }
 
 void Game::toggleLatinExtendedBtns(bool disable)
@@ -279,5 +284,14 @@ void Game::printArray()
 
 void Game::menuBtn()
 {
+    if (points != 0) {
+        emit saveScore();
+    }
     emit returnToMenu();
+}
+
+void Game::saveResetGame()
+{
+    emit saveScore();
+    resetGame();
 }

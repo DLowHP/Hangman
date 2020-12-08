@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Scores</class>
+ <widget class="QWidget" name="Scores">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,1,1,1,0">
+   <item row="1" column="2" colspan="2">
+    <widget class="QLabel" name="labelBalloonsSaved">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 18pt;
+	qproperty-alignment: 'AlignCenter';
+	color: #000000;
+}</string>
+     </property>
+     <property name="text">
+      <string>Balloons saved</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QLabel" name="labelPoints">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 18pt;
+	qproperty-alignment: 'AlignCenter';
+	color: #000000;
+}</string>
+     </property>
+     <property name="text">
+      <string>Points (phrases decoded)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="btnMenu">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: 5px solid #000000;
+	padding: 5px;
+	font-size: 14pt;
+	color: #000000;
+	background-color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Menu</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="labelName">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 18pt;
+	qproperty-alignment: 'AlignCenter';
+	color: #000000;
+}</string>
+     </property>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="4">
+    <spacer name="hspacer1">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>649</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QPlainTextEdit" name="names">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="backgroundVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QPlainTextEdit" name="points">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="backgroundVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="2">
+    <widget class="QPlainTextEdit" name="balloons">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="backgroundVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

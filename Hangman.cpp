@@ -11,6 +11,8 @@ using json = nlohmann::json;
 
 #include "scenes/Menu/Menu.h"
 #include "scenes/Game/Game.h"
+#include "scenes/Help/Help.h"
+#include "scenes/Scores/Scores.h"
 
 #define NOALLOWCOUT
 
@@ -22,15 +24,25 @@ Hangman::Hangman(QWidget *parent)
 
     menu = new Menu;
     game = new Game;
+    scores = new Scores;
 
     ui->display->insertWidget(0, menu);
     ui->display->insertWidget(1, game);
+    ui->display->insertWidget(2, scores);
 
     ui->display->setCurrentIndex(0);
 
     connect(menu, SIGNAL(startGameSignal()), this, SLOT(startGame()));
+    connect(menu, SIGNAL(showScoresSignal()), this, SLOT(showScores()));
+
     connect(game, SIGNAL(returnToMenu()), this, SLOT(showMenu()));
-    
+    connect(game, SIGNAL(saveScore()), this, SLOT(saveScore()));
+
+    connect(scores, SIGNAL(returnToMenu()), this, SLOT(showMenu()));
+
+    game->setMenuRef(menu);
+    scores->setGameRef(game);
+
     //! Working draft, used to allow std::cout, probably bad practice. 
     //Found a better way, but it may be useful in future.
 #ifdef ALLOWCOUT
@@ -53,9 +65,18 @@ void Hangman::showMenu()
     ui->display->setCurrentIndex(0);
 }
 
+void Hangman::showScores()
+{
+    ui->display->setCurrentIndex(2);
+}
+
 void Hangman::startGame()
 {
     ui->display->setCurrentIndex(1);
-    game->setMenuRef(menu);
     game->setupGame();
+}
+
+void Hangman::saveScore()
+{
+    scores->saveScore();
 }

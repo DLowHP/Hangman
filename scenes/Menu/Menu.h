@@ -6,6 +6,8 @@
 #include "include/nlohmann/json.hpp"
 using json = nlohmann::json;
 
+#include "scenes/Help/Help.h"
+
 namespace Ui {
 class Menu;
 }
@@ -46,9 +48,12 @@ private slots:
     void setFileName();
     void changeDifficulty();
     void startGame();
+    void showHelp();
+    void showScores();
 
 signals:
     void startGameSignal();
+    void showScoresSignal();
 };
 
 #endif // MENU_H

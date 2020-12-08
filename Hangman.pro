@@ -14,7 +14,9 @@ SOURCES += \
     scenes/Canvas/Canvas.cpp \
     scenes/Game/Game.cpp \
     scenes/GameFinish/GameFinish.cpp \
-    scenes/Menu/Menu.cpp 
+    scenes/Help/Help.cpp \
+    scenes/Menu/Menu.cpp  \
+    scenes/Scores/Scores.cpp
 
 HEADERS += \
     Hangman.h \
@@ -22,14 +24,18 @@ HEADERS += \
     include/nlohmann/json.hpp \
     scenes/Game/Game.h \
     scenes/GameFinish/GameFinish.h \
-    scenes/Menu/Menu.h 
+    scenes/Help/Help.h \
+    scenes/Menu/Menu.h  \
+    scenes/Scores/Scores.h
 
 FORMS += \
     Hangman.ui \
     scenes/Canvas/Canvas.ui \
     scenes/Game/Game.ui \
     scenes/GameFinish/GameFinish.ui \
-    scenes/Menu/Menu.ui
+    scenes/Help/Help.ui \
+    scenes/Menu/Menu.ui \
+    scenes/Scores/Scores.ui
 
 TRANSLATIONS += \
     Hangman_en_US.ts

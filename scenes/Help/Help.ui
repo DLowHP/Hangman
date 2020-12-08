@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QDialog" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 18pt;
+	qproperty-alignment: 'AlignCenter';
+	color: #000000;
+}</string>
+     </property>
+     <property name="text">
+      <string>The goal of this game is to guess secret word one letter at a time! If you guess an incorrect letter, your hangman will lose one balloon. To win, spell the word before he runs out of balloons!</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnOk">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: 5px solid #000000;
+	padding: 5px;
+	font-size: 14pt;
+	color: #000000;
+	background-color: #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
