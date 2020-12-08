@@ -21,6 +21,7 @@
        <property name="styleSheet">
         <string notr="true">QPushButton {
 	border: 5px solid #000000;
+	padding: 5px;
 	font-size: 14pt;
 	color: #000000;
 	background-color: #ffffff;
@@ -45,6 +46,32 @@
       </spacer>
      </item>
      <item>
+      <widget class="QLabel" name="labelSaved">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 16pt;
+	color: #000000;
+}</string>
+       </property>
+       <property name="text">
+        <string>Saved balloons:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="saved">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 16pt;
+	color: #000000;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QLabel" name="labelScore">
        <property name="styleSheet">
         <string notr="true">QLabel {
@@ -53,7 +80,7 @@
 }</string>
        </property>
        <property name="text">
-        <string>Score: </string>
+        <string>   Score: </string>
        </property>
       </widget>
      </item>
@@ -72,12 +99,48 @@
      </item>
     </layout>
    </item>
-   <item row="10" column="0">
-    <widget class="QPushButton" name="btnRandom">
-     <property name="text">
-      <string>random</string>
-     </property>
-    </widget>
+   <item row="2" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="layoutCategory">
+     <item>
+      <spacer name="hspacer2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="category">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 16pt;
+	color: #000000;
+}</string>
+       </property>
+       <property name="text">
+        <string>Category</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="hspacer3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
    </item>
    <item row="9" column="1">
     <widget class="QStackedWidget" name="canvasDisplay">
@@ -88,7 +151,7 @@
     <widget class="QLabel" name="phrase">
      <property name="styleSheet">
       <string notr="true">QLabel {
-	font: 22pt;
+	font: 18pt;
 	qproperty-alignment: 'AlignCenter';
 	color: #000000;
 }</string>
@@ -1257,49 +1320,6 @@ QPushButton:!enabled {
         <string>Q</string>
        </property>
       </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="2" column="0" colspan="2">
-    <layout class="QHBoxLayout" name="layoutCategory">
-     <item>
-      <spacer name="hspacer2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QLabel" name="category">
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-	font: 16pt;
-	color: #000000;
-}</string>
-       </property>
-       <property name="text">
-        <string>Category</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer name="hspacer3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
     </layout>
    </item>

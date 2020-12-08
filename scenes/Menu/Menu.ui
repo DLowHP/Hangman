@@ -80,6 +80,7 @@
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 5px solid #000000;
+	padding: 5px;
 	font-size: 14pt;
 	color: #000000;
 	background-color: #ffffff;
@@ -190,6 +191,7 @@ QPushButton:checked {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 5px solid #000000;
+	padding: 5px;
 	font-size: 16pt;
 	background-color: #ffffff;
 	color: #000000;
@@ -305,6 +307,7 @@ QPushButton:checked {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 5px solid #000000;
+	padding: 5px;
 	font-size: 24pt;
 	background-color: #000000;
 	color: #ffffff;
@@ -373,6 +376,7 @@ QPushButton:!enabled {
        <property name="styleSheet">
         <string notr="true">QPushButton {
 	border: 5px solid #000000;
+	padding: 5px;
 	font-size: 14pt;
 	color: #000000;
 	background-color: #ffffff;
@@ -413,6 +417,7 @@ QPushButton:!enabled {
        <property name="styleSheet">
         <string notr="true">QPushButton {
 	border: 5px solid #000000;
+	padding: 5px;
 	font-size: 14pt;
 	color: #000000;
 	background-color: #ffffff;

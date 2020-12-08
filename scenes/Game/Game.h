@@ -4,6 +4,7 @@
 #include <QWidget>
 
 #include "scenes/Menu/Menu.h"
+#include "scenes/Canvas/Canvas.h"
 
 namespace Ui {
 class Game;
@@ -19,11 +20,13 @@ public:
 
     void setMenuRef(Menu* ptr);
     void setupGame();
+    int& getScore();
 
 private:
     Ui::Game *ui;
 
     Menu* menu = nullptr;
+    Canvas* hangman;
 
     json phrases;
     int phrasesAmount;
@@ -31,16 +34,22 @@ private:
 
     QString currentCategory;
     QString currentPhrase;
+    int phraseLetterAmount;
+    int guessedLetters;
 
     QString secretPhrase;
 
     int balloons;
+    int points;
+    int balloonsSaved;
 
     void toggleLatinExtendedBtns(bool disable = true);
     void encodePhrase();
+    void decodePhrase();
 
 private slots:
     void resetGame();
+    void continueGame();
     void drawPhrase();
     void checkLetter();
     void printArray();
@@ -48,6 +57,7 @@ private slots:
 
 signals:
     void returnToMenu();
+    void redraw();
 };
 
 #endif // GAME_H

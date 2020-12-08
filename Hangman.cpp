@@ -29,6 +29,7 @@ Hangman::Hangman(QWidget *parent)
     ui->display->setCurrentIndex(0);
 
     connect(menu, SIGNAL(startGameSignal()), this, SLOT(startGame()));
+    connect(game, SIGNAL(returnToMenu()), this, SLOT(showMenu()));
     
     //! Working draft, used to allow std::cout, probably bad practice. 
     //Found a better way, but it may be useful in future.

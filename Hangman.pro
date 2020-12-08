@@ -13,19 +13,22 @@ SOURCES += \
     Hangman.cpp \
     scenes/Canvas/Canvas.cpp \
     scenes/Game/Game.cpp \
-    scenes/Menu/Menu.cpp
+    scenes/GameFinish/GameFinish.cpp \
+    scenes/Menu/Menu.cpp 
 
 HEADERS += \
     Hangman.h \
     scenes/Canvas/Canvas.h \
     include/nlohmann/json.hpp \
     scenes/Game/Game.h \
-    scenes/Menu/Menu.h
+    scenes/GameFinish/GameFinish.h \
+    scenes/Menu/Menu.h 
 
 FORMS += \
     Hangman.ui \
     scenes/Canvas/Canvas.ui \
     scenes/Game/Game.ui \
+    scenes/GameFinish/GameFinish.ui \
     scenes/Menu/Menu.ui
 
 TRANSLATIONS += \
@@ -35,8 +38,3 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES +=
-
-DISTFILES += \
-    scenes/test/PatrickHand-Regular.ttf

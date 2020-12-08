@@ -15,12 +15,16 @@ public:
     explicit Canvas(QWidget *parent = nullptr);
     ~Canvas();
 
+    void redraw();
+    void setBallons(int value);
+
 protected:
     void paintEvent(QPaintEvent* event);
 
-
 private:
     Ui::Canvas *ui;
+
+    int ballons;
 };
 
 #endif // CANVAS_H
