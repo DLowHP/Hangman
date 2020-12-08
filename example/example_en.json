@@ -1,0 +1,70 @@
+{
+    "lang": "en",
+    "Phrases": [
+        {
+            "category": "Animals",
+            "phrase": "Blue whale"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Dog"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Snowy Owl"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Raccoon"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Cat"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Frog"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Chicken"
+        },
+        {
+            "category": "Animals",
+            "phrase": "Crocodile"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Eyes"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Teeth"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Shoulder"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Moustache"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Belly button"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Eyebrow"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Tongue"
+        },
+        {
+            "category": "Body parts",
+            "phrase": "Ankle"
+        },
+
+    ]
+}

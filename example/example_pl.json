@@ -1,0 +1,101 @@
+{
+    "lang": "pl",
+    "Phrases": [
+        {
+            "category": "Zwierzęta",
+            "phrase": "Płetwal błękitny"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Pies"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Sowa śnieżna"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Szop pracz"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Kot"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Żaba"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Kurczak"
+        },
+        {
+            "category": "Zwierzęta",
+            "phrase": "Krokodyl"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Pierwsze koty za płoty"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Dzieci i ryby głosu nie mają"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Nie szata zdobi człowieka"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Nie kupuj kota w worku"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Nigdy nie mów nigdy"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Kto rano wstaje temu Pan Bóg daje"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Lepszy rydz niż nic"
+        },
+        {
+            "category": "Przysłowia",
+            "phrase": "Z deszczu pod rynnę"
+        },
+        {
+            "category": "Podzespoły komputerowe",
+            "phrase": "Procesor"
+        },
+        {
+            "category": "Podzespoły komputerowe",
+            "phrase": "Karta graficzna"
+        },
+        {
+            "category": "Podzespoły komputerowe",
+            "phrase": "Pamięć RAM"
+        },
+        {
+            "category": "Podzespoły komputerowe",
+            "phrase": "Płyta główna"
+        },
+        {
+            "category": "Peryferia komputerowe",
+            "phrase": "Kontroler"
+        },
+        {
+            "category": "Peryferia komputerowe",
+            "phrase": "Monitor"
+        },
+        {
+            "category": "Peryferia komputerowe",
+            "phrase": "Drukarka"
+        },
+        {
+            "category": "Peryferia komputerowe",
+            "phrase": "Klawiatura"
+        },
+    ]
+}
